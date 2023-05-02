@@ -1,0 +1,90 @@
+<!-- Bu sayt O`ta mukammal tuzilgan.... Chottka sayt DUNYODAGI Eng Zo`r Sayt BU NURAZIZCOM ATLASSdir -->
+<!-- sayt mu'allifi: Nuraziz Narziqulov; -->
+<!-- bu saytda 570 qator code yozilgan C NnN -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nur-AtLass</title>
+    <link rel="stylesheet" href="{% static 'Styles/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'Styles/css/responsev.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+</head>
+<body id="body">
+    <nav></nav>
+    <header id="header" class="" style="position: fixed;">
+        <div class="cotainer">
+            <a href="#" class="logo"><i class="fa fa-book" aria-hidden="true"></i>Nurli Ta'lim</a>
+        <li class="menu">=</li>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li class="dropdown">Category
+                    <ul class="dropdown-active">
+                        {% for category in category %}
+                        <li><a href="{% url 'category' %}?category={{ category.name }}">{{ category.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+            
+        </div>
+        </div>
+        
+       
+    </header>
+    <div class="about">
+        <h1 class="about1">#About</h1>
+    </div>
+    
+    <div class="t-about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos voluptatum dolores nihil, deleniti fugit cupiditate recusandae itaque facere repellendus voluptates maiores illo ratione voluptatem sunt quod eius eveniet. Eaque?
+        Laboriosam impedit laudantium harum eos ab nemo eveniet ex totam, earum repellendus nihil tempora quibusdam qui non delectus, placeat at pariatur quo ut aut explicabo repellat velit. Rem, animi at.
+        Et similique veritatis, odit quas eum debitis nobis architecto quos, distinctio vitae labore quae sit voluptatem? Consectetur est itaque, autem aspernatur eligendi quo et accusantium molestiae id quae aperiam illum!
+        Sint nisi aspernatur ratione optio dolor ad rerum repellat non quibusdam hic earum omnis vel, magni quae ipsa natus est quas impedit? Eos quibusdam sequi nesciunt reprehenderit odit tenetur error.
+        Eos ullam quidem magni soluta, harum ratione reiciendis vitae tenetur, accusamus incidunt nisi temporibus neque recusandae assumenda atque animi aut dolorum cumque eligendi itaque dolores officia repellat. Veritatis, dolorem optio.
+        Cupiditate nihil doloribus incidunt qui, natus nemo fugit cumque aliquid accusantium fugiat aliquam soluta, totam sequi rem ratione magnam saepe tenetur beatae. Perspiciatis, fuga soluta dolore ab distinctio sed quidem!
+        Sapiente ratione vel voluptates id, sit doloribus nihil repellat sed mollitia modi suscipit voluptatem ab magnam debitis alias consequuntur? Amet deleniti possimus sequi enim recusandae minus quidem id accusantium ad!
+        Veritatis earum accusamus cupiditate. Non minima nisi officia magni nihil doloribus consequuntur sapiente qui ipsam expedita unde reiciendis consequatur rem ipsa, nemo esse alias eos libero, numquam sed corporis commodi?
+        Non, dolore saepe. Unde ex voluptates, corrupti nisi eius autem fuga commodi quia vero quos incidunt fugiat. Dolore molestias expedita tenetur velit omnis? Id, eaque. Debitis facilis error non voluptatibus?
+        Distinctio sint adipisci quisquam excepturi. Dignissimos dolorem cumque pariatur voluptate facere. Vel provident harum cupiditate rerum, ipsam libero minus expedita obcaecati quibusdam ducimus cumque accusamus eaque placeat hic tempora quod.
+        Reprehenderit et sint cupiditate illo nostrum consequatur, repudiandae ducimus incidunt neque. Aperiam, fuga labore sunt necessitatibus numquam id! Maiores enim autem unde ducimus minus itaque deleniti in eligendi esse sint.
+        Magnam itaque eos, molestiae eligendi tempore rem quisquam? Ullam maxime nobis quod ad tempore, eum facere? Nemo saepe accusantium, recusandae animi a sapiente minus eligendi et qui, optio, numquam dolor.
+        Id amet cum excepturi hic! Maxime corporis aspernatur perferendis, tempore illum omnis aut accusamus blanditiis nam voluptatem tempora ipsa facilis sequi porro assumenda vel molestiae doloribus officiis voluptate odit saepe.
+        Perferendis molestiae officiis voluptate molestias non quam libero quo! Quos voluptatibus tempore voluptatem. Deleniti ab doloribus, amet sint fugit voluptas debitis odit id possimus aspernatur, consequuntur distinctio eligendi enim quod?
+        Vitae neque, ipsam numquam illo labore in iusto consequuntur? Quibusdam, expedita consequuntur pariatur autem repellat reprehenderit, ullam magni minima non vel animi officia tempore quos sapiente! Beatae quae mollitia accusantium.
+        Recusandae totam, numquam dignissimos corrupti ut dolores doloribus, earum ipsam adipisci fugiat itaque tempore molestiae rerum consectetur aliquam reprehenderit cupiditate possimus harum! Voluptate ratione nostrum quam eum ut fugit est.
+        Odit dolorem dicta at deserunt. Itaque, ab at quasi in ipsa mollitia quo iusto nihil provident natus molestias amet, similique excepturi nam non velit facere doloribus eveniet accusamus minima quaerat.
+        Rerum, quibusdam veritatis maiores aliquid provident soluta quod voluptates, sequi, at iste aperiam mollitia ut omnis labore animi? Error et rerum eos mollitia hic voluptatibus voluptate laborum laudantium repellendus aperiam.
+        Non numquam odit corrupti ab delectus aut in, natus laudantium quasi iste aperiam ut accusamus totam praesentium unde hic quae commodi autem vitae deleniti facere sapiente dolor impedit! In, eligendi!
+        Voluptatum exercitationem doloremque corporis eveniet qui amet labore rerum perspiciatis quis? Minus dolorum impedit ullam architecto atque praesentium doloribus repellat non dolorem, modi voluptas recusandae nihil. Quas voluptatum eaque dolorum?
+    </div>
+    <footer>
+        <h1><i class="fa fa-book" aria-hidden="true"></i>Nurli Ta'lim © 2022</h1>
+    </footer>
+    <!-- <div class="alert-post" id="alert1">
+        <h1>web post menu <span id="spanRemove1">x</span></h1>
+        <p>postlar bu web saytdagi rasmlardir</p>
+        
+    </div>
+    <div class="alert-admin-tel" id="alert2">
+        <h1>admin-tel<span id="spanRemove2">x</span></h1>
+        <p>33 116 19 81</p>
+        
+    </div> -->
+    <!-- <div class="alert-1" id="al">
+        <h1>oq va qora rijim <span id="spanRemove3">x</span></h1>
+        <button id="oq">orginal</button>
+        <button id="qora">qora</button>
+        <button id="red">qizil</button>
+    </div> -->
+    <script src="{% static 'javascript/app.js' %}"></script>
+</body>
+</html>
+<!-- Bu sayt O`ta mukammal tuzilgan.... Chottka sayt DUNYODAGI Eng Zo`r Sayt BU NURAZIZCOM ATLASSdir -->
+<!-- sayt mu'allifi: Nuraziz Narziqulov; -->
+<!-- bu saytda 570 qator code yozilgan C NnN-->

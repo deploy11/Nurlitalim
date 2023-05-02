@@ -1,0 +1,89 @@
+@media screen and (max-width:480px) {
+    header .menu{
+        display: block;
+        font-size: 55px;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .group{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        height: 900px;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 9999;
+        transition: 0.5s;
+        scroll-behavior: smooth;
+    }
+    .group.active{
+        top: 85px;
+        margin: 0;
+    }
+    .navigation{
+        flex-direction: column;
+        
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .serchBox{
+        display: none;
+    }
+    .serchBox.active{
+        display: block;
+    }
+    .full{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 900px;
+    }
+    .dropdown-active{
+       transform: scale(0);
+       opacity: 0;
+       position: static;
+       padding: 0px;
+       height: 0;
+    }
+    .absolud1{
+        display: none;
+    }
+    .dropdown:hover .dropdown-active{
+        transform: scale(0.9);
+        opacity: 1;
+        height: 150px;
+        padding: 10px;
+    }
+    .dropdown-active::before{
+        content: '+';
+        position: absolute;
+        background: #fff;
+        bottom: 160px;
+        left: 110px;
+        width: 22px;
+        height: 22px;
+        transform: rotate(0deg);
+        clip-path: none;
+    }
+    .card-group{
+        flex-direction: column;
+    }
+    .serves{
+        height: 900px;
+        text-align: center;
+    }
+    .full{
+        height: 946px;
+    }
+    .full>.image{
+        top: 90px;
+    }
+}

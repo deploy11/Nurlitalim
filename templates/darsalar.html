@@ -1,0 +1,94 @@
+<!-- Bu sayt O`ta mukammal tuzilgan.... Chottka sayt DUNYODAGI Eng Zo`r Sayt BU NURAZIZCOM ATLASSdir -->
+<!-- sayt mu'allifi: Nuraziz Narziqulov; -->
+<!-- bu saytda 570 qator code yozilgan C NnN -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nur-AtLass</title>
+    <link rel="stylesheet" href="{% static 'Styles/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'Styles/css/responsev.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <style>
+        .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+    </style>
+</head>
+<body id="body">
+    <nav></nav>
+    <header id="header" class="" style="position: fixed;">
+        <div class="cotainer">
+            <a href="#" class="logo"><i class="fa fa-book" aria-hidden="true"></i>Nurli Ta'lim</a>
+        <li class="menu">=</li>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li class="dropdown">Category
+                    <ul class="dropdown-active">
+                        {% for category in category %}
+                        <li><a href="{% url 'category' %}?category={{ category.name }}">{{ category.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+        
+       
+    </header>
+    <div class="about">
+        <h1 class="about1">#Daslar</h1>
+    </div>
+    <div class="card-group">
+        {% for dars in dars %}
+        <div class="card post">
+            <iframe width="560" height="315" src="{{ dars.vidio }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="container">
+            <h4><b>{{ dars.title }}</b></h4>
+            <p>{{ dars.category }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <footer>
+        <h1><i class="fa fa-book" aria-hidden="true"></i>Nurli Ta'lim © 2022</h1>
+    </footer>
+    <!-- <div class="alert-post" id="alert1">
+        <h1>web post menu <span id="spanRemove1">x</span></h1>
+        <p>postlar bu web saytdagi rasmlardir</p>
+        
+    </div>
+    <div class="alert-admin-tel" id="alert2">
+        <h1>admin-tel<span id="spanRemove2">x</span></h1>
+        <p>33 116 19 81</p>
+        
+    </div> -->
+    <!-- <div class="alert-1" id="al">
+        <h1>oq va qora rijim <span id="spanRemove3">x</span></h1>
+        <button id="oq">orginal</button>
+        <button id="qora">qora</button>
+        <button id="red">qizil</button>
+    </div> -->
+    <script src="{% static 'javascript/app.js' %}"></script>
+</body>
+</html>
+<!-- Bu sayt O`ta mukammal tuzilgan.... Chottka sayt DUNYODAGI Eng Zo`r Sayt BU NURAZIZCOM ATLASSdir -->
+<!-- sayt mu'allifi: Nuraziz Narziqulov; -->
+<!-- bu saytda 570 qator code yozilgan C NnN-->
